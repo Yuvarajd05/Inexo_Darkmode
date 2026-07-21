@@ -3971,3 +3971,48 @@ html .o_form_sheet_bg,
 	background-color: #0f1017 !important;
 	background: #0f1017 !important;
 }
+
+// Style Odoo form input elements so they are visible and recognizable as inputs to type in
+html .o_web_client .o_form_view {
+	.o_input,
+	input.o_input,
+	textarea.o_input,
+	select.o_input {
+		background-color: #1a1c22 !important;
+		background: #1a1c22 !important;
+		color: #e9f0f2 !important;
+		border: 1px solid #333342 !important;
+		border-radius: 4px !important;
+		padding: 4px 8px !important;
+		min-height: 30px !important;
+
+		&:hover {
+			border-color: #4c4c5b !important;
+		}
+
+		&:focus {
+			border-color: #83d8ae !important;
+			background-color: #1f202b !important;
+			outline: none !important;
+			box-shadow: 0 0 0 2px rgba(131, 216, 174, 0.2) !important;
+		}
+
+		&::placeholder {
+			color: #7a7c8b !important;
+		}
+	}
+
+	.o_required_modifier {
+		&.o_input,
+		.o_input {
+			border-color: #5c7cfa !important;
+		}
+	}
+
+	.o_field_invalid {
+		&.o_input,
+		.o_input {
+			border-color: #dc3545 !important;
+		}
+	}
+}
