@@ -3952,3 +3952,22 @@ html .o_web_client .o_action_manager {
 		}
 	}
 }
+
+// High-specificity layout, form view, and action manager backgrounds to resolve white borders/lines
+html,
+html.o_inexo_bg_cool,
+html .o_web_client,
+html.o_inexo_bg_cool .o_web_client,
+html .o_action_manager,
+html.o_inexo_bg_cool .o_action_manager,
+html .o_content,
+html.o_inexo_bg_cool .o_content,
+html .o_view_controller,
+html.o_inexo_bg_cool .o_view_controller,
+html .o_form_view,
+html .o_form_sheet_bg,
+.o_form_view,
+.o_form_sheet_bg {
+	background-color: #0f1017 !important;
+	background: #0f1017 !important;
+}
